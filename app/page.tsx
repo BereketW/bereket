@@ -1,9 +1,11 @@
-// import Image from "next/image";
-import Header from "@/components/Header";
+import React from "react";
+import Hero from "@/components/Hero";
+import Works from "@/components/Works";
 export default function Home() {
   return (
-    <main className="mx-10">
-      <Header />
-    </main>
+    <>
+      <Hero />
+      <Works />
+    </>
   );
 }

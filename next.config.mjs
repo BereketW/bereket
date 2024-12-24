@@ -1,12 +1,16 @@
-import type { NextConfig } from "next";
+import { hostname } from "os";
 
-const nextConfig: NextConfig = {
+const nextConfig = {
   images: {
     remotePatterns: [
       {
         hostname: "image.cnbcfm.com",
         protocol: "https",
-        pathname: "/",
+        pathname: "/**",
+      },
+      {
+        hostname: "*",
+        pathname: "/**",
       },
     ],
   },
