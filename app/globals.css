@@ -70,3 +70,11 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+.layout {
+  clip-path: polygon(0 90%, 0 10%, 100% 0, 100% 100%);
+}
+
+.transfrom-r-c {
+  transform-origin: right center;
+}
