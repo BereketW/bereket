@@ -6,7 +6,7 @@ import { Github, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 export default function Hero() {
   return (
-    <div className="min-h-screen bg-white text-black relative overflow-hidden">
+    <div className="min-h-screen bg-white text-black  relative overflow-hidden">
       {/* Background decoration */}
       <div className="absolute inset-0 z-0">
         <motion.div
@@ -42,7 +42,8 @@ export default function Hero() {
         </header>
 
         {/* Hero */}
-        <main className="grid grid-cols-1 w-3/4 m-auto lg:grid-cols-2 gap-12 px-8 py-24">
+
+        <main className="grid  grid-cols-1 w-3/4 m-auto lg:grid-cols-2 gap-12 px-8 py-24">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -77,7 +78,6 @@ export default function Hero() {
               </Link>
             </div>
           </motion.div>
-
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -87,24 +87,23 @@ export default function Hero() {
             {/* Code snippet decoration */}
             <div className="absolute inset-0 font-mono text-sm opacity-10 overflow-hidden whitespace-pre">
               {`function Developer() {
-const skills = [
-  'JavaScript',
-  'TypeScript',
-  'React',
-  'Node.js',
-  'Next.js'
-]
-
-return (
-  <Developer 
-    type="Full Stack"
-    passion="Building"
-    focus="Solutions"
-  />
-)
-}`}
+          const skills = [
+            'JavaScript',
+            'TypeScript',
+            'React',
+            'Node.js',
+            'Next.js'
+          ]
+          
+          return (
+            <Developer 
+              type="Full Stack"
+              passion="Building"
+              focus="Solutions"
+            />
+          )
+          }`}
             </div>
-
             {/* Decorative elements */}
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-96 h-96 border-8 border-black rounded-full opacity-5" />
